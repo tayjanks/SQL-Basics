@@ -20,29 +20,66 @@ VALUES ('Taylor', 28, 170.18, 'West Jordan', 'Green' ),
 --Problem 3
 SELECT *
 FROM person
-ORDER BY height DESC
+ORDER BY height DESC;
 
 --Problem 4
 SELECT *
 FROM person
-ORDER BY height ASC
+ORDER BY height ASC;
 
 --Problem 5
+SELECT *
+FROM person
+ORDER BY age DESC;
 
 --Problem 6
+SELECT *
+FROM person
+WHERE age >20;
 
 --Problem 7
+SELECT *
+FROM person
+WHERE age =18;
 
 --Problem 8
+SELECT *
+FROM person
+WHERE age < 20 OR age > 30;
+
 
 --Problem 9
+SELECT *
+FROM person
+WHERE age <> 27;
 
 --Problem 10
+SELECT *
+FROM person
+WHERE favorte_color <> 'Red';
+
 
 --Problem 11
+SELECT *
+FROM person
+WHERE favorte_color <> 'Red'AND favorte_color <> 'Blue';
+
 
 --Problem 12
+SELECT *
+FROM person
+WHERE favorte_color IN ('Orange', 'Blue');
+--or
+SELECT *
+FROM person
+WHERE favorte_color = 'Orange' OR favorte_color = 'Blue';
 
 --Problem 13
+SELECT *
+FROM person
+WHERE favorte_color IN ('Orange', 'Green', 'Blue');
 
 --Problem 14
+SELECT *
+FROM person
+WHERE favorte_color IN ('Yellow', 'Purple');
